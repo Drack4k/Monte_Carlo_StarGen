@@ -28,7 +28,9 @@ For the stars that are still in the MS, the code assigns the initial mass as the
 pip install -r requirements.txt
 ```
 3- run the code   
-The code will ask you to enter the number of stars to generate, a seed for those steps that make use of random and define the variable ‘plots’. The latter activates the generation of pre-made plots.
+The code will ask you to enter the number of stars to generate, a seed for those steps that make use of random and define the variable ‘plots’. The latter activates the generation of pre-made plots.   
+
+Note: The code will probably take a little longer the first time you run it.
 
 ## Output
 The output of the code consists in the catalog of the generated stars, including initial mass, age, object type, final mass. The catalog will be generated in the same folder where the code is being executed. If the user has entered ‘y’ in the ‘plots’ request, then pre-set plots will also be generated in the ‘Plots’ folder.

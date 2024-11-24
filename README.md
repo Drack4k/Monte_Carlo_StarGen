@@ -18,7 +18,7 @@ The final mass of each remnant is calculated, following the ratios established b
     - Kalirai (2008) - https://arxiv.org/abs/0706.3894   
     - Raithel (2018) - https://iopscience.iop.org/article/10.3847/1538-4357/aab09b   
 
-Stars that are still in the DM are assigned -1 as final mass
+For the stars that are still in the MS, the code assigns the initial mass as the final mass
 
 ## Usage
 ### prerequisites

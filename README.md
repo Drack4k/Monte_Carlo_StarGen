@@ -22,7 +22,7 @@ Stars that are still in the DM are assigned -1 as final mass
 
 ## Usage
 ### prerequisites
-1- python 3.7 or a higher version installed
+1- python 3.7 or a higher version installed   
 2- python libraries: matplotlib, seaborn, numpy. If you download the full repository, just use the following command:   
 ```python
 pip install -r requirements.txt

@@ -31,5 +31,5 @@ pip install -r requirements.txt
 The code will ask you to enter the number of stars to generate, a seed for those steps that make use of random and define the variable ‘plots’. The latter activates the generation of pre-made plots.
 
 ## Output
-The output of the code consists of the catalog of generated stars, including initial mass, age, object type, final mass. This will be generated in the same folder where the code is being executed. If the user has entered ‘y’ in the ‘plots’ request, then pre-set plots will also be generated in the ‘Plots’ folder.
+The output of the code consists in the catalog of the generated stars, including initial mass, age, object type, final mass. The catalog will be generated in the same folder where the code is being executed. If the user has entered ‘y’ in the ‘plots’ request, then pre-set plots will also be generated in the ‘Plots’ folder.
 

@@ -23,6 +23,13 @@ Stars that are still in the DM are assigned -1 as final mass
 ## Usage
 ### prerequisites
 1- python 3.7 or a higher version installed
-2- python libraries: matplotlib, seaborn, numpy. If you download the full repository, just use the following line of code:   
-`pip install -r requirements.txt`   
-3- run the code 
+2- python libraries: matplotlib, seaborn, numpy. If you download the full repository, just use the following command:   
+```python
+pip install -r requirements.txt
+```
+3- run the code   
+The code will ask you to enter the number of stars to generate, a seed for those steps that make use of random and define the variable ‘plots’. The latter activates the generation of pre-made plots.
+
+## Output
+The output of the code consists of the catalog of generated stars, including initial mass, age, object type, final mass. This will be generated in the same folder where the code is being executed. If the user has entered ‘y’ in the ‘plots’ request, then pre-set plots will also be generated in the ‘Plots’ folder.
+

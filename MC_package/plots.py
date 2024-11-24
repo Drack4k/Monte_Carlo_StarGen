@@ -173,7 +173,7 @@ def plot_mass_vs_age(masses,ages,ind):
     
     plt.xscale('linear')  
     plt.xlabel('Age [Myr]')
-    plt.ylabel('Mass [$M_\odot$]')
+    plt.ylabel('Final Mass [$M_\odot$]')
     plt.yscale("log")
     plt.legend(loc='upper center')
     plt.title('Age vs Mass for Stellar Categories')

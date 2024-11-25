@@ -53,11 +53,11 @@ def generate_times(masses):
             if t_out_ms<0, the star is out of the MS, i.e. t_alive > t_ms.
     """
     
-    born_time = np.random.uniform(0, 13900, len(masses))
+    born_time = np.random.uniform(0, 13600, len(masses))
     
     t_ms = ((10**10) / (masses**2.5)) * 1e-6  # in MYr
     
-    t_alive = 13900 - born_time
+    t_alive = 13600 - born_time
     
     t_out_ms = t_alive - t_ms
     

@@ -84,12 +84,12 @@ def remanent_mass(masses,indicators):
 
     # Black Hole (BH)
     BH_type = (indicators==3) 
-    cond_BH1 = (15 <= masses) & (masses <= 40) & BH_type
+    cond_BH1 = (15 <= masses) & (masses <= 42.5) & BH_type
     M_BH_core_low = -2.049 + 0.4140*masses[cond_BH1]
     M_BH_all = (15.52 - 0.3294*(masses[cond_BH1] - 25.97) - 0.02121*(masses[cond_BH1] - 25.97)**2 + 0.003120*(masses[cond_BH1] - 25.97)**3 )
     final_masses[cond_BH1] = 0.9*M_BH_core_low + (1 - 0.9)*M_BH_all
 
-    cond_BH2 = (45 <= masses) & (masses <= 120) & BH_type
+    cond_BH2 = (42.5 < masses) & (masses <= 120) & BH_type
     final_masses[cond_BH2] = 5.697 + 7.8598 * 10**8 * (masses[cond_BH2])**-4.858
 
     final_masses[indicators==0] = masses[indicators==0]

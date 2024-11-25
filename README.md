@@ -1,6 +1,6 @@
 # Monte_Carlo_StarGen
 Monte Carlo code for generating artificial stellar populations, based on the IMF of Kroupa 2001. This code facilitates the simulation of synthetic stellar populations, making it possible to analyse galaxies in a controlled environment, especially in the Milky Way.
-![dia](https://github.com/user-attachments/assets/18a65e5d-783b-408f-96ad-34603fe4eb67)
+![dia](https://github.com/user-attachments/assets/2c5216d1-9b87-41a2-8928-5637f24bd43b)
 
 ## Overview
 

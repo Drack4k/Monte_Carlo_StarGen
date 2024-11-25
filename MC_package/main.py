@@ -13,15 +13,15 @@ def main(N_p,Xseed,plots):
     1. Generate stellar masses with their associated probabilities using the Kroupa IMF.
     2. Simulate stellar formation times and calculate their lifetimes (ages).
     3. Classify stars based on their masses and lifetimes.
-    4. Compute the final mass for each star that is a remanent at nowadays, considering stellar evolution.
+    4. Compute the final mass for each star that is a remnant at nowadays, considering stellar evolution.
     5. Optionally create and save 7 plots:
       - Ini. mass vs probability
       - Ini. mass histogram
       - born times histogram
-      - Ini. mass histogram with remanent labels.
+      - Ini. mass histogram with remnant labels.
       - Ini. mass vs age
       - Pie plot
-      - Pie plot for remanents
+      - Pie plot for remnant
     6. Save the generated catalog as a CSV file.
 
     Parameters:
@@ -39,7 +39,7 @@ def main(N_p,Xseed,plots):
         A DataFrame containing the generated stellar catalog with the following columns:
         - 'Mass_i': Initial stellar mass.
         - 'Age': Stellar age (Myr).
-        - 'remanent': Type of stellar remnant (e.g., white dwarf, neutron star, black hole).
+        - 'Object': Type of stellar remnant (e.g., white dwarf, neutron star, black hole).
         - 'Mass_f': Final stellar mass after evolution.
     """
     start_time = time.time()
@@ -77,7 +77,7 @@ def main(N_p,Xseed,plots):
 
         plt.figure(figsize=(10, 6))
         plot_mass_histogram_per_remanent(masses,indicators)
-        plt.savefig("Plots/plot_mass_hist_per_remanent.pdf", format="pdf", dpi=300)
+        plt.savefig("Plots/plot_mass_hist_per_remnant.pdf", format="pdf", dpi=300)
         plt.close()
 
         plt.figure(figsize=(10, 6))
@@ -97,7 +97,7 @@ def main(N_p,Xseed,plots):
 
         plt.figure(figsize=(10, 6))
         pie_plot_remanets(indicators)
-        plt.savefig("Plots/Pie_plot_remanents.pdf", format="pdf", dpi=300)
+        plt.savefig("Plots/Pie_plot_remnant.pdf", format="pdf", dpi=300)
         plt.close()
 
     # Create a DataFrame for the stellar catalog

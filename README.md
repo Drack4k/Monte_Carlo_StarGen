@@ -1,6 +1,6 @@
 # Monte_Carlo_StarGen
 Monte Carlo code for generating artificial stellar populations, based on the IMF of Kroupa 2001. This code facilitates the simulation of synthetic stellar populations, making it possible to analyse galaxies in a controlled environment, especially in the Milky Way.
-![dia](https://github.com/user-attachments/assets/7a64fc15-2d3f-411c-9853-16924bff80a7)
+![dia](https://github.com/user-attachments/assets/1a3a7a7f-b547-46ff-a9fa-4598c77a1204)
 
 ## Overview
 
@@ -10,10 +10,10 @@ In this first stage, the code randomly generates the initial masses of the stars
 ### Born time, age, and time on MS (generate_times)
 Each star is assigned a randomly generated birth time, following a uniform distribution based on a constant star formation rate over time. A galaxy age of 13600 Myr is assumed to calculate the age and time out of the main sequence. The latter is calculated taking into account that the lifetime in the MS is given by $t_{MS} = 10^{10} / M^{2.5} ~[yr]$.
 
-### End point (remanent_classifier) 
+### End point (remnant_classifier) 
 The code identifies those stars that are already stellar remnants at nowadays, evaluating the time they have been out of the MS (t_out) and classifies them assigning a numerical value depending on the intial mass of the object. If t_out is negative, it means that the stars are still in the MS, and they are assigned an index 0. If t_out is positive, the type of stellar remnant is classified depending on the initial mass of the star, assigning an index 1 for white dwarfs, 2 for neutron stars and 3 for black holes. The time out the MS will be $t_{out} = age - t_{MS}$.
 
-### remnant mass (remanent_mass) 
+### remnant mass (remnant_mass) 
 The final mass of each remnant is calculated, following the relations established by   
     - Kalirai (2008) - https://arxiv.org/abs/0706.3894   
     - Raithel (2018) - https://iopscience.iop.org/article/10.3847/1538-4357/aab09b   

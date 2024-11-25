@@ -14,7 +14,7 @@ Each star is assigned a randomly generated birth time, following a uniform distr
 The code identifies those stars that are already stellar remnants as of today by evaluating the time they have been out of the MS (t_out) and classifies them by assigning them a numerical value depending on the remnant. If t_out is negative, it means that the stars are still in the MS, and they are assigned an index 0. If t_out is positive, the type of stellar remnant is classified depending on the initial mass of the star, assigning an index 1 for white dwarfs, 2 for neutron stars and 3 for black holes. The time out the MS will be $t_{out} = age - t_{MS}$.
 
 ### Remanent mass (remanent_mass) 
-The final mass of each remnant is calculated, following the ratios established by   
+The final mass of each remnant is calculated, following the relations established by   
     - Kalirai (2008) - https://arxiv.org/abs/0706.3894   
     - Raithel (2018) - https://iopscience.iop.org/article/10.3847/1538-4357/aab09b   
 

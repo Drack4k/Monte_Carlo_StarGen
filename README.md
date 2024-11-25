@@ -28,6 +28,9 @@ For the stars that are still in the MS, the code assigns the initial mass as the
 pip install -r requirements.txt
 ```
 3- run the code   
+```python
+python main.py
+```
 The code will ask you to enter the number of stars to generate, a seed for those steps that make use of random and define the variable ‘plots’. The latter activates the generation of pre-made plots.   
 
 Note: The code will probably take a little longer the first time you run it.

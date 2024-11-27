@@ -52,12 +52,12 @@ def remnant_mass(masses,indicators):
     final_masses = np.full_like(masses, None, dtype=object)  # Inicializar array con None
 
     # White Dwarf (WD)
-    cond_WD = (masses < 9) & (indicators==1)
+    cond_WD = (masses < 8) & (indicators==1)
     final_masses[cond_WD] = 0.109 * masses[cond_WD] + 0.394
 
     # Neutron Star (NS)
     NS_type = (indicators==2) 
-    cond_NS1 = (9 <= masses) & (masses <= 13) & NS_type
+    cond_NS1 = (8 <= masses) & (masses <= 13) & NS_type
     final_masses[cond_NS1] = (
         2.24 + 0.508 * (masses[cond_NS1] - 14.75)
         + 0.125 * (masses[cond_NS1] - 14.75) ** 2
